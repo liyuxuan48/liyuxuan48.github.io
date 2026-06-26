@@ -25,11 +25,12 @@
 <body>
 
   <nav class="topbar">
-    <a href="https://liyuxuan48.github.io/" class="topbar-name">Yuxuan Li</a>
+    <a href="index.html" class="topbar-name">Yuxuan Li</a>
     <ul class="topbar-links">
-      <li><a href="https://liyuxuan48.github.io/" class="active">Home</a></li>
-      <li><a href="https://liyuxuan48.github.io/research.html">Publications</a></li>
-      <li><a href="https://liyuxuan48.github.io/research/CV.pdf" target="_blank">CV</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="research/CV.pdf" target="_blank">CV</a></li>
     </ul>
   </nav>
 
@@ -42,15 +43,35 @@
       </div>
       <div class="bio-text">
         <h1 class="bio-name">Yuxuan Li</h1>
+        <p class="research-vision">
+          Advancing predictive thermal-fluid simulation through physics-based,
+          reduced-order, and data-driven modeling.
+        </p>
+        <p class="vision-detail">
+          High-fidelity simulation has transformed science, but its computational cost often
+          limits its impact in practical engineering. I believe the next generation of simulation
+          should be predictive, computationally efficient, and broadly accessible.
+        </p>
         <p class="bio-subtitle">
           Ph.D. &middot; University of California, Los Angeles<br>
           Project Engineer, Simerics Inc.
         </p>
-        <p class="bio-body">I obtained my Ph.D. in <a href="https://www.mae.ucla.edu/">Mechanical Engineering</a>
-          at the University of California, Los Angeles in Dec. 2024. I graduated with a B.S. in
-          <a href="http://www.aero.sjtu.edu.cn/En/Default">Aeronautics and Astronautics</a> from
-          Shanghai Jiao Tong University in July 2019.</p>
-        <p class="bio-body">My research focuses on conjugate heat transfer modeling of oscillating heat pipes (OHPs), using immersed boundary methods and reduced-order modeling to study OHP dynamics, performance, and operation limits. My CFD experience spans compressible shock-bubble interactions to incompressible VoF ship hydrodynamics, with a shared focus on lightweight numerical methods for complex multiphysics problems.</p>
+        <p class="bio-body">My research seeks to bridge this gap through mechanistic modeling,
+          reduced-order methods, and emerging data-driven techniques. The goal is to develop
+          computationally efficient predictive models for complex thermal-fluid systems, making
+          advanced thermal analysis more lightweight, interpretable, and useful for designers
+          working on spacecraft, electronics cooling, and other space- or resource-constrained
+          systems.</p>
+        <p class="bio-body">I work at the intersection of conjugate heat transfer, reduced-order
+          modeling, and immersed boundary methods, with oscillating heat pipes as a central
+          application for understanding nonlinear transport, start-up, performance limits, and
+          dryout. Across these problems, data-driven modeling is an emerging direction used to
+          complement physics-based simulation rather than replace it.</p>
+
+        <div class="vision-actions">
+          <a href="research.html">Research program</a>
+          <a href="https://github.com/liyuxuan48/OscillatingHeatPipe.jl" target="_blank">OscillatingHeatPipe.jl</a>
+        </div>
 
         <div class="social-links">
           <a href="mailto:liyuxuan48@g.ucla.edu" target="_blank"><i class="fa fa-envelope"></i> Email</a>
@@ -65,10 +86,18 @@
     <!-- Research Highlights -->
     <h2>Research Highlights</h2>
     <div class="highlight-grid">
-      <div class="highlight-card">
+      <div class="highlight-card highlight-featured">
         <img src="videos/slug.gif" alt="OHP slug motions">
-        <p class="card-caption"><strong>Oscillating heat pipe (OHP) low-order modeling</strong> &mdash;
-          slug motions during an OHP start-up.</p>
+        <div class="card-caption">
+          <span class="caption-kicker">Primary Research Direction</span>
+          <strong>Oscillating Heat Pipe Modeling</strong>
+          <span>Lightweight predictive models for OHP dynamics, performance, start-up, and dryout, built to support compact thermal-system design.</span>
+          <span class="caption-note">In the animation, red marks the heater and blue marks the condenser.</span>
+          <div class="card-actions">
+            <a href="research.html">Explore the research program</a>
+            <a href="https://github.com/liyuxuan48/OscillatingHeatPipe.jl" target="_blank">Open-source code</a>
+          </div>
+        </div>
       </div>
       <div class="highlight-card">
         <img src="videos/IBM_temperature.gif" alt="IBM temperature field">

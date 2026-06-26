@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yuxuan Li &ndash; Publications</title>
+  <title>Yuxuan Li &ndash; Research</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,235 +25,228 @@
 <body>
 
   <nav class="topbar">
-    <a href="https://liyuxuan48.github.io/" class="topbar-name">Yuxuan Li</a>
+    <a href="index.html" class="topbar-name">Yuxuan Li</a>
     <ul class="topbar-links">
-      <li><a href="https://liyuxuan48.github.io/">Home</a></li>
-      <li><a href="https://liyuxuan48.github.io/research.html" class="active">Publications</a></li>
-      <li><a href="https://liyuxuan48.github.io/research/CV.pdf" target="_blank">CV</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="research/CV.pdf" target="_blank">CV</a></li>
     </ul>
   </nav>
 
-  <main class="page-content">
+  <main class="page-content research-page">
 
-    <!-- Journal Papers -->
-    <h2>Journal Papers</h2>
-    <div class="pub-list">
-
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-journal">Journal</span>
-          <span class="badge badge-year">2026</span>
-        </div>
-        <p class="pub-title">
-          Effects of inclination angle on oscillating heat pipe thermal conductance and dryout
-        </p>
-        <p class="pub-authors">Yuxuan Li, Zachary Wong, Jeff D. Eldredge, Adrienne S. Lavine, Timothy S. Fisher, Bruce L. Drolen</p>
-        <p class="pub-venue"><em>ASME Journal of Heat and Mass Transfer</em>, accepted, 2026</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          Predicting the operational limits of oscillating heat pipes (OHPs) under varying gravitational
-          orientations remains a significant challenge for terrestrial and aerospace thermal management
-          systems. The current paper extends and validates a previously reported two-dimensional conjugate
-          heat transfer model to quantify the effect of inclination angles on the thermal performance and
-          dryout behavior of an OHP filled with butane. The model couples a solid plate heat conduction
-          module with a one-dimensional fluids module using the immersed boundary method. The gravity term
-          has been added in the momentum equation to account for gravitational effects. Additionally, a
-          novel computational method is used to simulate perfectly insulated edges on the plate and this
-          updated approach accommodates complex OHP geometries in the future. The proposed model is
-          quantitatively validated against terrestrial experiments across multiple inclination angles,
-          demonstrating good agreement in predicting both steady-state thermal conductance and transient
-          dryout thresholds. We characterize three representative cases: normal pseudo-steady operation,
-          switching operation, and dryout. Finally, we observed that the dry fraction exhibits a strong
-          correlation with the temperature difference and thus represents a key parameter controlling the
-          thermal performance.
+    <section class="research-hero">
+      <p class="section-kicker">Research Program</p>
+      <h1>Oscillating Heat Pipe Modeling</h1>
+      <p class="research-lede">
+        I develop predictive, computationally efficient models for oscillating heat pipes and related
+        thermal-fluid systems, with the goal of connecting first-principles simulation to compact,
+        reliable thermal management for spacecraft, electronics, and other constrained engineering systems.
+      </p>
+      <div class="research-hero-media">
+        <img src="videos/slug.gif" alt="Oscillating heat pipe slug motion">
+        <div>
+          <span class="caption-kicker">Central Application</span>
+          <p>
+            OHPs provide a demanding testbed for predictive thermal-fluid modeling because device-level
+            performance emerges from coupled phase change, slug motion, wall conduction, and operating limits.
+            Better models can help translate advanced passive cooling concepts into practical design tools
+            for applications where volume, mass, power, and operating margin matter.
+            In the animation, red marks the heater and blue marks the condenser.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-journal">Journal</span>
-          <span class="badge badge-year">2024</span>
+    <section class="research-section">
+      <h2>What Makes OHPs Unique</h2>
+      <figure class="real-ohp-figure">
+        <img src="research/OHP_real.webp" alt="Photograph of a real oscillating heat pipe device">
+        <figcaption>
+          A real oscillating heat pipe device. Its serpentine capillary channel couples compact packaging
+          with passive liquid-vapor oscillations for heat transport.
+          Source: <a href="https://www.thermavant.com/ohp-heat-spreaders" target="_blank">ThermAvant, Oscillating Heat Pipe Heat Spreaders</a>.
+        </figcaption>
+      </figure>
+      <p>
+        An oscillating heat pipe is a capillary-scale serpentine channel partially filled with working
+        fluid and embedded in a solid substrate. Unlike a conventional heat pipe, it does not rely on a
+        wick structure to return liquid from the condenser to the evaporator. Instead, the liquid and vapor
+        naturally form a train of plugs and bubbles whose self-sustained oscillations transport heat
+        between hot and cold regions.
+      </p>
+      <div class="ohp-feature-grid">
+        <div>
+          <strong>Compact and passive</strong>
+          <p>OHPs can move large heat loads with few mechanical parts, making them attractive for spacecraft, electronics, and confined systems.</p>
         </div>
-        <p class="pub-title">
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0017931024003612?via%3Dihub">
-            A Conjugate Heat Transfer Model of Oscillating Heat Pipe Dynamics, Performance, and Dryout
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Jeff D. Eldredge, Adrienne S. Lavine, Timothy S. Fisher, Bruce L. Drolen</p>
-        <p class="pub-venue"><em>International Journal of Heat and Mass Transfer</em>, 2024, <strong>227</strong>, 125530</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          Oscillating heat pipes (OHPs) consist of a serpentine capillary channel partially filled with liquid
-          that is embedded in a thermally-conducting solid. They have significant advantages for cooling
-          electronics and aerospace systems. The model reported here aims to capture the essential physics of
-          an OHP with minimal complexity and treats some parameters typically derived from correlations or
-          experiments (such as the film thickness and film triple point velocity) as functions with tunable
-          constants to be estimated by data assimilation. This model contains two modules. The first uses a
-          novel and flexible formulation of the conducting solid, solving the two-dimensional heat equation
-          in a thin plate, with evaporators and condensers as immersed forcing terms and the OHP channel as
-          an immersed line source. The second module solves one-dimensional fluid motion and heat transfer
-          equations within the fluid-filled channels based on mass, momentum, and energy conservation,
-          nucleate boiling, and bubble dryout. It extends the commonly-used film evaporation-condensation
-          model, allowing both variable liquid film thickness and length and thereby enabling the model to
-          capture dryout. These modules are weakly coupled, in that wall temperature in the channels are
-          obtained from the first module and heat flux from the channels determines the line source strength.
-          After minimal training, the thermal conductance calculated by this model shows good agreement with
-          a wide range of experiments performed by Drolen et al. (Drolen et al, JTHT, 2022). In particular,
-          the model successfully predicts the experimentally-observed transition from stable OHP operation to
-          dryout, for the first time to the authors' knowledge.
+        <div>
+          <strong>Strongly coupled physics</strong>
+          <p>Performance emerges from phase change, slug motion, wall conduction, capillarity, gravity, and contact-line dynamics.</p>
+        </div>
+        <div>
+          <strong>Design-sensitive behavior</strong>
+          <p>Small changes in geometry, filling ratio, orientation, or heat load can shift the device from start-up to stable operation or dryout.</p>
         </div>
       </div>
+      <p>
+        These same features make OHPs difficult to predict. Their operation is nonlinear, history-dependent,
+        and often regime-changing: a model must capture enough physics to predict start-up, thermal
+        conductance, oscillatory behavior, and failure limits, while remaining lightweight enough to be
+        useful during design.
+      </p>
+    </section>
 
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-journal">Journal</span>
-          <span class="badge badge-year">2020</span>
+    <section class="research-section">
+      <h2>Research Goals</h2>
+      <div class="research-goal-grid">
+        <div>
+          <span>Goal 1</span>
+          <strong>Predict OHP operation and limits</strong>
+          <p>
+            Develop experimentally validated models that can predict start-up, oscillatory transport,
+            thermal conductance, inclination effects, and dryout before hardware is built. This goal is
+            centered on compact thermal management for spacecraft, electronics, and confined systems where
+            operating margin matters.
+          </p>
         </div>
-        <p class="pub-title">
-          <a href="https://link.springer.com/article/10.1007/s00193-019-00928-w">
-            Gaussian models for late-time evolution of two-dimensional shock&ndash;light cylindrical bubble interaction
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Zi'ang Wang, Bin Yu, Bin Zhang, Hong Liu</p>
-        <p class="pub-venue"><em>Shock Waves</em>, 2020, <strong>30</strong>: 169&ndash;184</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          Two-dimensional shock&ndash;bubble interaction is an analogy of the steady three-dimensional jet
-          flow in a scramjet. On the basis of Navier&ndash;Stokes simulations, a cylindrical bubble embedded
-          with hydrogen surrounded by air was accelerated by a shock. The evolution can be divided into the
-          lobe-emergence stage, the back-lobe suction stage, and the equilibrium stage. Based on the
-          inhomogeneity between the hydrogen mass fraction and the vorticity field, a correlation coefficient
-          is proposed to quantitatively determine the starting moment of the equilibrium stage. In the
-          equilibrium stage, quasi-Gaussian distributions are modeled for the mass fraction and the vorticity.
-          Surface integrals are performed to derive corresponding mixedness and circulation models, both
-          controlled by two statistical parameters (standard deviation and peak value). Such Gaussian
-          integrated models are universal for different cylindrical bubble aspect ratios (AR = 0.5&ndash;2)
-          and shock Mach numbers (M = 1.22&ndash;2). They provide a statistical perspective of late-time
-          SBI evolution and help better understand the compressible mixing of scramjet combustors.
-        </div>
-      </div>
-
-    </div>
-
-    <hr>
-
-    <!-- Conference Papers -->
-    <h2>Conference Papers</h2>
-    <div class="pub-list">
-
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-conf">Conference</span>
-          <span class="badge badge-year">2026</span>
-        </div>
-        <p class="pub-title">
-          Numerical Approaches for Predicting Cavitation Inception in Non-Cavitating CFD Simulations
-        </p>
-        <p class="pub-authors">Doruk Isik, Yuxuan Li, Azfar Ali, Todd Koehler, Chiranth Srinivasan</p>
-        <p class="pub-venue"><em>Proceedings of the ASME 2026 Fluids Engineering Division Summer Meeting,
-          Bellevue, Washington</em>, 2026</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          Double-suction impellers can experience cavitation inception before measurable head degradation
-          appears, making early detection important for pump design. This paper evaluates three
-          pressure-based approaches for estimating incipient cavitation from non-cavitating CFD simulations:
-          a minimum-pressure method, a regression-based bubble-accumulation method, and a localized
-          sphere-based method. Implemented in Simerics-MP+, the methods are applied across steady and
-          transient simulations of a single-stage double-suction impeller. The results compare method
-          sensitivity, conservativeness, and the role of unsteady flow structures in predicted NPSHi.
+        <div>
+          <span>Goal 2</span>
+          <strong>Make simulation useful during design</strong>
+          <p>
+            Build physics-based, reduced-order, and data-assisted tools that preserve the essential
+            thermal-fluid physics while remaining fast enough for repeated design studies, calibration,
+            uncertainty analysis, operating-envelope exploration, and future real-time control.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-conf">Conference</span>
-          <span class="badge badge-year">2025</span>
+    <section class="research-section">
+      <h2>Animations</h2>
+      <div class="media-grid">
+        <figure>
+          <img src="videos/slug.gif" alt="Oscillating heat pipe slug motion">
+          <figcaption>Liquid-vapor slug motion during OHP start-up. Red marks the heater and blue marks the condenser.</figcaption>
+        </figure>
+        <figure>
+          <img src="videos/IBM_temperature.gif" alt="Immersed boundary temperature field">
+          <figcaption>Immersed-boundary temperature field with internal heat sources.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="research-section">
+      <h2>Numerical Model</h2>
+      <p>
+        The numerical model treats the solid substrate and fluid channels as coupled but distinct physics
+        modules. The solid module solves transient heat conduction in the plate, while channel heating and
+        evaporator/condenser regions are represented through immersed forcing terms. The fluid module
+        advances one-dimensional mass, momentum, and energy balances for the liquid-vapor train.
+      </p>
+      <p>
+        This reduced description is designed to preserve the physics most important for prediction:
+        conjugate heat transfer, nucleate boiling, film evaporation and condensation, wall-fluid coupling,
+        gravity effects, and dryout.
+      </p>
+    </section>
+
+    <section class="research-section">
+      <h2>Experimental Validation</h2>
+      <p>
+        The model has been validated against OHP experiments over multiple heat loads and gravitational
+        orientations, with comparisons focused on thermal conductance, transient temperature evolution,
+        operating regime changes, and dryout thresholds. These comparisons are central to the project:
+        the goal is not only to reproduce qualitative oscillations, but to predict engineering quantities
+        that matter for design.
+      </p>
+    </section>
+
+    <section class="research-section">
+      <h2>Research Outputs</h2>
+      <div class="compact-list output-list">
+        <div class="output-item">
+          <div class="pub-badges">
+            <span class="badge badge-journal">Journal</span>
+            <span class="badge badge-year">2026</span>
+          </div>
+          <p>
+            <strong>Effects of inclination angle on oscillating heat pipe thermal conductance and dryout.</strong>
+            ASME Journal of Heat and Mass Transfer, accepted, 2026.
+          </p>
         </div>
-        <p class="pub-title">
-          <a href="https://www.researchgate.net/profile/Yuxuan-Li-14/publication/399696404_RANS-BASED_SIMULATION_OF_KCS_WAVE_BREAKING_CHARACTERISTICS/links/6965898cabecff2489ea92dd/RANS-BASED-SIMULATION-OF-KCS-WAVE-BREAKING-CHARACTERISTICS.pdf">
-            RANS-based simulation of KCS wave breaking characteristics
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Chengjie Wang</p>
-        <p class="pub-venue"><em>Wageningen 2025: A Workshop on CFD in Ship Hydrodynamics</em>, 2025</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          This paper presents an unsteady Reynolds-Averaged Navier-Stokes (RANS) simulation of the bow wave
-          breaking dynamics of a scaled KRISO Container Ship (KCS) using Simerics-MP+. The non-dimensional
-          force coefficients exhibit excellent agreement with experimental data from China Ship Scientific
-          Research Center (CSSRC), with a maximum error below 2%. Detailed comparisons of mean wave height
-          confirm the high accuracy of the free surface simulation. Further analysis and visualizations of
-          air tubes, vortical structures, and the non-dimensional velocity and vorticity fields under the
-          free surface are provided. This work validates the fidelity of the RANS approach for capturing
-          the KCS wave breaking dynamics.
+        <div class="output-item">
+          <div class="pub-badges">
+            <span class="badge badge-journal">Journal</span>
+            <span class="badge badge-year">2024</span>
+          </div>
+          <p>
+            <strong>A Conjugate Heat Transfer Model of Oscillating Heat Pipe Dynamics, Performance, and Dryout.</strong>
+            International Journal of Heat and Mass Transfer, 2024.
+          </p>
+        </div>
+        <div class="output-item">
+          <div class="pub-badges">
+            <span class="badge badge-conf">Proceeding Paper</span>
+            <span class="badge badge-year">2023</span>
+          </div>
+          <p>
+            <strong>A data assimilation model of oscillating heat pipe dynamics and performance.</strong>
+            Joint International Heat Pipe Conference and International Heat Pipe Symposium, 2023.
+          </p>
+        </div>
+        <div class="output-item">
+          <div class="pub-badges">
+            <span class="badge badge-talk">Presentation</span>
+            <span class="badge badge-year">2023</span>
+          </div>
+          <p>
+            <strong>Estimating thermofluid system parameters using a Markov chain Monte Carlo method,
+            with an example of oscillating heat pipes.</strong>
+            APS Division of Fluid Dynamics, 2023.
+          </p>
         </div>
       </div>
+      <p><a href="publications.html">View full publication timeline</a></p>
+    </section>
 
-    </div>
+    <section class="research-section">
+      <h2>Open-source Code</h2>
+      <p>
+        I am interested in making research software reusable for the thermal-fluid community. The OHP
+        modeling effort is connected to open, inspectable computational tools and examples that support
+        reproducibility, model development, and more accessible thermal-design workflows.
+      </p>
+      <p><a href="https://github.com/liyuxuan48/OscillatingHeatPipe.jl" target="_blank">View OscillatingHeatPipe.jl</a></p>
+    </section>
 
-    <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-conf">Conference</span>
-          <span class="badge badge-year">2023</span>
+    <section class="research-section">
+      <h2>Future Directions</h2>
+      <p>
+        The next stage of this research program is to extend the current physics-based modeling framework
+        toward faster, more design-aware prediction for compact and resource-constrained thermal systems.
+        Current directions of interest include:
+      </p>
+      <div class="future-grid">
+        <div>
+          <strong>Reduced-order modeling</strong>
+          <p>Rapid evaluation across operating conditions.</p>
         </div>
-        <p class="pub-title">
-          <a href="https://ihpcs.org/wp-content/uploads/2025/03/Combined-Proceedings-21st-IHPC-and-15th-IHPS.pdf">
-            A data assimilation model of oscillating heat pipe dynamics and performance
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Jeff D. Eldredge, Adrienne S. Lavine, Timothy S. Fisher, Bruce L. Drolen</p>
-        <p class="pub-venue"><em>Joint 21st International Heat Pipe Conference and 15th International Heat Pipe
-          Symposium, Melbourne, Australia</em>, 2023</p>
-      </div>
-
-    <hr>
-
-    <!-- Talks -->
-    <h2>Talks</h2>
-    <div class="pub-list">
-
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-talk">Talk</span>
-          <span class="badge badge-year">2023</span>
+        <div>
+          <strong>Scientific machine learning</strong>
+          <p>Targeted support for physical closure models and parameter inference.</p>
         </div>
-        <p class="pub-title">
-          <a href="https://meetings.aps.org/Meeting/DFD23/Session/L28.4">
-            Estimating thermofluid system parameters using a Markov chain Monte Carlo method,
-            with an example of oscillating heat pipes
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Jeff D. Eldredge, Adrienne S. Lavine, Timothy S. Fisher, Bruce L. Drolen</p>
-        <p class="pub-venue"><em>76th Annual Meeting of the APS Division of Fluid Dynamics, Washington, DC</em>, 2023</p>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-talk">Talk</span>
-          <span class="badge badge-year">2023</span>
+        <div>
+          <strong>Digital twins</strong>
+          <p>State tracking and operational-limit awareness for thermal systems.</p>
         </div>
-        <p class="pub-title">
-          Empirically Trained Models of Oscillating Heat Pipes for Improved Performance, Limits, and Control
-        </p>
-        <p class="pub-authors">Yuxuan Li, Zachary Wong, Jeff D. Eldredge, and Timothy S. Fisher</p>
-        <p class="pub-venue"><em>2023 Spacecraft Thermal Control Workshop, Torrance</em>, 2023</p>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-badges">
-          <span class="badge badge-talk">Talk</span>
-          <span class="badge badge-year">2022</span>
+        <div>
+          <strong>Design optimization</strong>
+          <p>Geometry, filling ratio, orientation, and heat-load tradeoffs.</p>
         </div>
-        <p class="pub-title">
-          <a href="https://meetings.aps.org/Meeting/DFD22/Session/T35.7">
-            Thermofluid modeling of an oscillating heat pipe
-          </a>
-        </p>
-        <p class="pub-authors">Yuxuan Li, Jeff D. Eldredge, Adrienne S. Lavine, Timothy S. Fisher, Bruce L. Drolen</p>
-        <p class="pub-venue"><em>75th Annual Meeting of the APS Division of Fluid Dynamics, Indianapolis, Indiana</em>, 2022</p>
       </div>
-
-    </div>
+    </section>
 
   </main>
 
@@ -262,13 +255,5 @@
   </footer>
 
   <script src="javascripts/scale.fix.js"></script>
-  <script>
-    document.querySelectorAll("button.accordion").forEach(function(btn) {
-      btn.addEventListener("click", function() {
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-      });
-    });
-  </script>
 </body>
 </html>
